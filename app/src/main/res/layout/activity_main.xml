@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="409dp"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/board" />
+
+        <ImageView
+            android:id="@+id/im12"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="2"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im11"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="1"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im13"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im22"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="150dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="5"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im21"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="150dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="4"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im23"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="150dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im32"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="290dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="8"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im31"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="290dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="7"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/im33"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginLeft="285dp"
+            android:layout_marginTop="290dp"
+            android:alpha="0"
+            android:onClick="show"
+            android:tag="9"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/red" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:alpha="0"
+        android:onClick="playAgain"
+        android:text="PLAY AGAIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
